@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Développeur IA & Machine Learning</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">PHAM Jimmy</div>
+            <ul class="nav-links">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#cv">CV</a></li>
+                <li><a href="#formation">Formation</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="accueil" class="hero">
+        <div class="hero-content">
+            <h1>Développeur IA & Machine Learning</h1>
+            <p class="subtitle">Passionné par l'intelligence artificielle et le développement web</p>
+            <div class="hero-buttons">
+                <a href="#projets" class="btn btn-primary">Voir mes projets</a>
+                <a href="#contact" class="btn btn-secondary">Me contacter</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="competences" class="section">
+        <div class="container">
+            <h2 class="section-title">Compétences Techniques</h2>
+            
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Intelligence Artificielle</h3>
+                    <ul>
+                        <li>PyTorch, Transformers (Hugging Face)</li>
+                        <li>Modèles de langage (GPT, BERT, Pythia)</li>
+                        <li>Fine-tuning de modèles pré-entraînés</li>
+                        <li>Optimisation (quantization, pruning)</li>
+                        <li>CodeCarbon - mesure d'empreinte énergétique</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Développement Backend</h3>
+                    <ul>
+                        <li>Python (Flask, FastAPI)</li>
+                        <li>APIs RESTful</li>
+                        <li>Gestion de bases de données</li>
+                        <li>Traitement de données (pandas, numpy)</li>
+                        <li>Git & GitHub</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Développement Frontend</h3>
+                    <ul>
+                        <li>HTML5, CSS3, JavaScript</li>
+                        <li>Design responsive</li>
+                        <li>UI/UX principes</li>
+                        <li>Accessibilité web</li>
+                        <li>Sobriété numérique</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Outils & DevOps</h3>
+                    <ul>
+                        <li>CUDA, GPU computing</li>
+                        <li>Docker (connaissances de base)</li>
+                        <li>VS Code, Jupyter Notebooks</li>
+                        <li>Débogage et tests</li>
+                        <li>Documentation technique</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projets" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Projets Réalisés</h2>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>API de Résumé de Texte Optimisée</h3>
+                        <span class="project-tag">IA • Flask • Python</span>
+                    </div>
+                    <p class="project-description">
+                        Application web Flask avec interface graphique pour résumer des textes en 10-15 mots. 
+                        Intègre deux modes (baseline et optimisé) avec mesures d'énergie en temps réel via CodeCarbon.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">Flask</span>
+                        <span class="tech-badge">Transformers</span>
+                        <span class="tech-badge">CodeCarbon</span>
+                        <span class="tech-badge">HTML/CSS</span>
+                    </div>
+                    <ul class="project-features">
+                        <li>Fine-tuning du modèle Pythia-70M sur dataset XSum (150k exemples)</li>
+                        <li>Optimisation GPU (CUDA, bf16/fp16)</li>
+                        <li>Mesure d'empreinte énergétique par requête</li>
+                        <li>Interface web accessible et sobre</li>
+                        <li>Checkpoints automatiques toutes les 100 étapes</li>
+                    </ul>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Système d'Entraînement ML avec Checkpointing</h3>
+                        <span class="project-tag">ML • PyTorch • Training</span>
+                    </div>
+                    <p class="project-description">
+                        Pipeline d'entraînement automatisé pour modèles de résumé avec gestion de checkpoints, 
+                        reprise automatique et optimisation GPU/CPU.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-badge">PyTorch</span>
+                        <span class="tech-badge">Hugging Face</span>
+                        <span class="tech-badge">CUDA</span>
+                        <span class="tech-badge">Datasets</span>
+                    </div>
+                    <ul class="project-features">
+                        <li>Tokenization optimisée pour modèles causaux</li>
+                        <li>Gestion automatique GPU/CPU avec mixed precision</li>
+                        <li>Sauvegarde périodique et rotation des checkpoints</li>
+                        <li>Reprise d'entraînement automatique</li>
+                        <li>Dataset: 150k exemples (XSum) avec batch size adaptatif</li>
+                    </ul>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Application Web de Sobriété Numérique</h3>
+                        <span class="project-tag">Web • Green IT • UX</span>
+                    </div>
+                    <p class="project-description">
+                        Interface web minimaliste affichant les métriques de performance (énergie, latence) 
+                        en temps réel, conçue selon les principes de sobriété numérique.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-badge">HTML5</span>
+                        <span class="tech-badge">CSS3</span>
+                        <span class="tech-badge">JavaScript</span>
+                        <span class="tech-badge">Accessibilité</span>
+                    </div>
+                    <ul class="project-features">
+                        <li>Design épuré et accessible (WCAG)</li>
+                        <li>Affichage métriques : énergie (kWh/Wh), latence (ms)</li>
+                        <li>Interface responsive (mobile, tablet, desktop)</li>
+                        <li>Choix mode baseline/optimisé pour l'utilisateur</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="formation" class="section">
+        <div class="container">
+            <h2 class="section-title">Formation & Expérience</h2>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Projet IA de Résumé Automatique</h3>
+                        <span class="timeline-date">2025</span>
+                        <p>Développement d'une solution complète de résumé de texte avec IA, incluant fine-tuning de modèles, 
+                        optimisation GPU et mesure d'impact environnemental.</p>
+                        <ul>
+                            <li>Fine-tuning de modèles transformer (Pythia-70M)</li>
+                            <li>Optimisation performance et énergie</li>
+                            <li>Développement API Flask + interface web</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Auto-formation en Machine Learning</h3>
+                        <span class="timeline-date">2024-2025</span>
+                        <p>Apprentissage autonome des technologies d'IA et de Machine Learning</p>
+                        <ul>
+                            <li>PyTorch, Transformers (Hugging Face)</li>
+                            <li>Fine-tuning de modèles de langage</li>
+                            <li>CUDA et calcul GPU</li>
+                            <li>Principes de sobriété numérique en IA</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CV Section -->
+    <section id="cv" class="section">
+        <div class="container">
+            <h2 class="section-title">Mon CV (PDF)</h2>
+            <p>Vous pouvez télécharger mon CV au format PDF ou le visualiser en ligne.</p>
+            <div class="hero-buttons" style="justify-content:flex-start; gap:1rem; margin-top:1rem;">
+                <a href="assets/CV.pdf" class="btn btn-primary" download>Télécharger le CV (PDF)</a>
+                <a href="assets/CV.pdf" class="btn btn-secondary" target="_blank" rel="noopener">Voir le CV</a>
+            </div>
+            <div class="cv-preview" style="margin-top:1.5rem;">
+                <embed src="assets/CV.pdf" type="application/pdf" width="100%" height="600px">
+                <p>Si l'aperçu ne s'affiche pas, <a href="assets/CV.pdf" target="_blank">cliquez ici pour ouvrir le PDF</a>.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Me Contacter</h2>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Informations de Contact</h3>
+                    <div class="contact-item">
+                        <span class="icon" aria-hidden="true"></span>
+                        <div>
+                            <strong>Email</strong>
+                            <p>jpham.ing2027@esaip.org</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="icon" aria-hidden="true"></span>
+                        <div>
+                            <strong>Téléphone</strong>
+                            <p>+33 6 52 46 77 52</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="icon" aria-hidden="true"></span>
+                        <div>
+                            <strong>LinkedIn</strong>
+                            <p><a href="https://www.linkedin.com/in/jimmy-pham-a6511025b" target="_blank" rel="noopener">LinkedIn</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="icon" aria-hidden="true"></span>
+                        <div>
+                            <strong>GitHub</strong>
+                            <p><a href="https://github.com/Futsiph" target="_blank" rel="noopener">GitHub</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h3>Envoyez-moi un message</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Nom</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 - Portfolio PHAM Jimmy</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
