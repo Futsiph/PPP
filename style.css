@@ -551,3 +551,34 @@ footer p {
         page-break-inside: avoid;
     }
 }
+
+/* CV section styles */
+.cv-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-start;
+    margin-top: 1rem;
+}
+
+.cv-preview {
+    margin-top: 1.5rem;
+}
+
+.cv-embed {
+    width: 100%;
+    height: 480px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .cv-embed {
+        height: 320px;
+    }
+    .cv-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}

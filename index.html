@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Développeur IA & Machine Learning</title>
+    <title>Portfolio - Etudiant en 4ème année, spécialité IA </title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,8 +14,8 @@
                 <li><a href="#accueil">Accueil</a></li>
                 <li><a href="#competences">Compétences</a></li>
                 <li><a href="#projets">Projets</a></li>
-                <li><a href="#cv">CV</a></li>
                 <li><a href="#formation">Formation</a></li>
+                <li><a href="#cv">CV</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -183,6 +183,19 @@
                         </ul>
                     </div>
                 </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Préparateur auto — 123 Parebrise (job d'été)</h3>
+                        <span class="timeline-date">été 2025</span>
+                        <p>Job d'été en atelier : préparation et nettoyage de véhicules, assistance au montage de pare-brise, contrôles qualité et relation client.</p>
+                        <ul>
+                            <li>Missions : préparation des véhicules avant intervention, nettoyage, manutention et organisation des pièces.</li>
+                            <li>Compétences développées et mises en œuvre : rigueur, respect des procédures de sécurité, sens du détail, travail en équipe et gestion du temps.</li>
+                            <li>Compétences métiers : connaissance des process atelier, contrôle qualité, communication client et gestion des priorités.</li>
+                        </ul>
+                    </div>
+                </div>
 
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
@@ -207,12 +220,12 @@
         <div class="container">
             <h2 class="section-title">Mon CV (PDF)</h2>
             <p>Vous pouvez télécharger mon CV au format PDF ou le visualiser en ligne.</p>
-            <div class="hero-buttons" style="justify-content:flex-start; gap:1rem; margin-top:1rem;">
-                <a href="assets/CV.pdf" class="btn btn-primary" download>Télécharger le CV (PDF)</a>
-                <a href="assets/CV.pdf" class="btn btn-secondary" target="_blank" rel="noopener">Voir le CV</a>
+            <div class="cv-actions">
+                <a href="assets/CV.pdf" class="btn btn-primary" download aria-label="Télécharger le CV (PDF)">Télécharger le CV (PDF)</a>
+                <a href="assets/CV.pdf" class="btn btn-secondary" target="_blank" rel="noopener" aria-label="Voir le CV dans un nouvel onglet">Voir le CV</a>
             </div>
-            <div class="cv-preview" style="margin-top:1.5rem;">
-                <embed src="assets/CV.pdf" type="application/pdf" width="100%" height="600px">
+            <div class="cv-preview">
+                <embed class="cv-embed" src="assets/CV.pdf" type="application/pdf">
                 <p>Si l'aperçu ne s'affiche pas, <a href="assets/CV.pdf" target="_blank">cliquez ici pour ouvrir le PDF</a>.</p>
             </div>
         </div>
