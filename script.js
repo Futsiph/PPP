@@ -83,7 +83,7 @@ const observer = new IntersectionObserver(function(entries) {
 }, observerOptions);
 
 // Observe all cards and timeline items
-document.querySelectorAll('.skill-card, .project-card, .timeline-item').forEach(el => {
+document.querySelectorAll('.skill-card, .project-card, .timeline-item, .lep-card, .vision-card, .future-vision').forEach(el => {
     el.style.opacity = '0';
     observer.observe(el);
 });
